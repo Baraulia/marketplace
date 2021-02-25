@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap4 %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/accounts/accounts_base.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+</head>
+<body>
+<header class="header">
+<div class="header_company block">
+  <img src="{% static 'img/logo.png' %}" class="logo_img" alt="">
+  <h1>Apple and Co</h1>
+</div>
+<div class="header_social block">
+  <a class="social_a" href=""><img src="{% static 'img/telegram.png' %}" class="social_img" alt=""></a>
+  <a class="social_a" href=""><img src="{% static 'img/facebook.png' %}" class="social_img" alt=""></a>
+  <a class="social_a" href=""><img src="{% static 'img/vk.png' %}" class="social_img" alt=""></a>
+</div>
+<div class="header_contact block" id="header_contact">
+    <p><strong>velcom:</strong><span class="contact_span">+375-29-888-88-88</span></p>
+    <p><strong>Life:</strong><span class="contact_span">  +375-29-888-88-88</span></p>
+    <p><strong>MTS:</strong><span class="contact_span">   +375-29-888-88-88</span></p>
+
+  </div>
+  </header>
+  <div class="autentificate">
+<!--    <a href="{% url 'accounts:login'%}"><button class="btn_atent">Вход</button></a>-->
+  <a href=""><button class="btn_atent">Регистрация</button></a>
+    </div>
+
+
+    {% block content %}
+{% endblock %}
+</body>
+</html>
